@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mapList">
+        <item>일반 지도</item>
+        <item>위성 지도</item>
+        <item>글자 없는 위성 지도</item>
+    </string-array>
+
+    <string-array name="mapList_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

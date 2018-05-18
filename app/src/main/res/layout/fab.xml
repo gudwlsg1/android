@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false" >
+
+        <!-- Please note that the @id are defined the first time they're referenced from top to bottom -->
+        <!-- <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonInventory"
+            android:src="@drawable/ic_work_white_24dp"
+            android:layout_above="@+id/buttonSetting"
+            android:layout_alignEnd="@+id/fab"
+            android:contentDescription="@null"
+            android:backgroundTint="@color/sa_gray"
+            android:width="24dp"
+            android:height="24dp"
+            android:onClick="onInventory" />
+
+        <ImageButton
+            android:id="@+id/buttonSetting"
+            android:src="@drawable/ic_settings_white_24dp"
+            android:layout_above="@+id/fab"
+            android:layout_alignEnd="@+id/fab"
+            android:contentDescription="@null"
+            android:backgroundTint="@color/sa_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSetting" />
+
+        <ImageButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null"
+            android:visibility="visible"
+            android:layout_marginTop="8dp"
+            android:onClick="onLocation"/> -->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/buttonInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_work_white_24dp"
+            android:onClick="onInventory" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/buttonSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_settings_white_24dp"
+            android:onClick="onSetting" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/LocationSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_location_searching_white_24dp" />
+
+    </RelativeLayout>
+</merge>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="지도">
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/mapList"
+            android:entryValues="@array/mapList_values"
+            android:key="mapList"
+            android:negativeButtonText="@array/mapList"
+            android:positiveButtonText="@array/mapList_values"
+            android:title="지도 종류" />
+
+        <SwitchPreference
+        android:defaultValue="true"
+        android:key="spinMap"
+        android:switchTextOff="OFF"
+        android:switchTextOn="ON"
+        android:title="지도 회전"
+        android:summary="지도의 회전 여부를 설정합니다"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="소리">
+        <CheckBoxPreference
+            android:title="배경음"
+            android:summaryOn="배경음 활성화"
+            android:summaryOff="배경음 음소거"
+            android:defaultValue="true"
+            android:key="backgroundSound"/>
+
+        <CheckBoxPreference
+            android:title="효과음"
+            android:summaryOn="효과음 활성화"
+            android:summaryOff="효과음 음소거"
+            android:defaultValue="true"
+            android:key="effectSound"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="서버 아이피">
+        <EditTextPreference
+            android:key="serverIP"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="서버 아이피 설정" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="기타">
+        <Preference
+            android:title="개발자"
+            android:summary="개발자 정보를 봅니다">
+            <intent
+                android:targetClass="com.example.wjsur0329.seeker.MadeByActivity"
+                android:targetPackage="com.example.wjsur0329.seeker"
+                />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

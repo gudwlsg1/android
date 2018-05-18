@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.wjsur0329.seeker.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />  <!--맵띄우는 거-->
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#770000ff"
+        android:textColor="#fff"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="이런! 보물 데이터가 없어요 ㅠㅠ"/>
+
+    <include layout="@layout/fab"
+    tools:layout_editor_absoluteY="295dp"
+    tools:layout_editor_absoluteX="-191dp"
+    android:layout_height="0dp"
+    android:layout_width="0dp" />
+
+</android.support.constraint.ConstraintLayout>

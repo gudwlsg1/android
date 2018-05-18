@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="100dp"
+
+    android:padding="20dp"
+    android:background="@color/little_blue"
+    tools:context="com.example.wjsur0329.seeker.ItemPushActivity">
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/itemImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/itemName"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemTitle"
+        app:srcCompat="@drawable/iconed"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/itemImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/itemCloseButton" />
+
+    <Button
+        android:id="@+id/itemCloseButton"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:text="보물획득"
+        app:layout_constraintRight_toLeftOf="@+id/outButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemName"
+        tools:layout_editor_absoluteY="224dp"
+        app:layout_constraintVertical_bias="0.501"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/outButton"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:text="닫기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/itemCloseButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemName"
+        app:layout_constraintVertical_bias="0.501"
+        tools:layout_editor_absoluteY="224dp" />
+
+</android.support.constraint.ConstraintLayout>
